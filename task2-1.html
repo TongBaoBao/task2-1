@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2-1</title>
+</head>
+<body>
+	<label>请输入北京今天空气质量：<input id="airInput" type="text"></label>
+	<button id="airButton" onclick="showValue()">确认填写</button>	
+	<div>您输入的值是：<span id="airNoInput">尚无输入</span></div>
+	<script type="text/javascript">
+		function showValue(){
+			var getValue=document.getElementById('airInput').value;
+			if (getValue=="") {
+				alert("请输入值");
+			}else{
+				document.getElementById('airNoInput').innerHTML=getValue;
+			};
+			
+		}
+	</script>
+</body>
+</html>
